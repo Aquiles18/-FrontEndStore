@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body>         <!-- vamos a introducir la metodologia BEM en este proyecto -->
+    <header class="header"> <!-- tanto header como nav son bloques ya que no dependen de nada y por sí solos son significativos -->
+        <a href="index.html"> <!--estamos haciendo que el logotipo actue como enlace para que nos lleve siempre a la pagina principal. alt es para que aparezca un texto en caso de no poder cargarse la imagen-->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo"><!-- img es un elemento por lo que se nombrará como tal  -->
+        </a>
+    </header>    
+
+    <nav class="navegacion">
+        <!-- si escribimos "a*2" nos crea directamente dos enlaces -->
+        <a class="navegacion__enlace navegacion__enlace--activo" href="#">Nosotros</a>
+        <a class="navegacion__enlace" href="#">Tienda</a>
+    </nav>
 </body>
 </html>
