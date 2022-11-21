@@ -62,18 +62,34 @@ h3{
     margin: 3rem 0;
 }
 
+/* Footer */
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
 /* Navegacion */
 .navegacion {
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Crea un espacio de 2rem en cada elemento. Nos evitamos tener que escribir para cada elemento un "margin-right: 2rem;" */
+    /*gap: 2rem;  Crea un espacio de 2rem en cada elemento. Nos evitamos tener que escribir para cada elemento un "margin-right: 2rem; Lo dejamos comentado ya que es un recurso muy nuevo y aun no tiene mucho soporte por parte de los navegadores. En su lugar usamos el margin-right de .navegacion__enlace" */
 }
 .navegacion__enlace {
     font-family: var(--fuentePrincipal);
     color: var(--blanco);
     font-size: 3rem;
+    margin-right: 2rem;
+}
+.navegacion__enlace:last-of-type { /* Siempre selecciona el último elemento que tenga la clase indicada */
+    margin-right: 0;
 }
 .navegacion__enlace:hover,
 .navegacion__enlace--activo {
