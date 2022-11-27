@@ -215,6 +215,11 @@ h3{
     padding: 1rem;
     appearance: none; /* para quitarle la flecha al despleglable de las tallas */
 }
+@media (max-width: 768px) {
+    .formulario__campo {
+        width: 100%;
+    }
+}
 .formulario__submit {
     background-color: var(--secundario);
     border: none;
